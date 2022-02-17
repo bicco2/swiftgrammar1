@@ -1,11 +1,14 @@
-//
-//  main.swift
-//  swiftgrammar1
-//
-//  Created by 진호병 on 2022/02/18.
-//
-
 import Foundation
 
-print("Hello, World!")
+//struct YoutuberStruct {
+//    var name : String
+//    var subCnt : Int
+//}
+//
+//var devJin = YoutuberStruct(name:"bicco", subCnt : 99999)
+//var devJinClone = devJin
+//
+//print("devJinClone.name : \(devJinClone.name)")
+//print("devJin.name : \(devJin.name)")
 
+print("Hello playGround")

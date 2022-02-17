@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC4F26FF27BEB4C000C1BEB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F26FE27BEB4C000C1BEB7 /* main.swift */; };
+		CC4F270E27BEB5BF00C1BEB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F270D27BEB5BF00C1BEB7 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,11 @@
 
 /* Begin PBXFileReference section */
 		CC4F26FB27BEB4C000C1BEB7 /* swiftgrammar1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftgrammar1; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC4F26FE27BEB4C000C1BEB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CC4F26FE27BEB4C000C1BEB7 /* if.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = if.swift; sourceTree = "<group>"; };
+		CC4F270527BEB54C00C1BEB7 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
+		CC4F270727BEB56900C1BEB7 /* for.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = for.swift; sourceTree = "<group>"; };
+		CC4F270927BEB58300C1BEB7 /* unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
+		CC4F270D27BEB5BF00C1BEB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,11 @@
 		CC4F26FD27BEB4C000C1BEB7 /* swiftgrammar1 */ = {
 			isa = PBXGroup;
 			children = (
-				CC4F26FE27BEB4C000C1BEB7 /* main.swift */,
+				CC4F26FE27BEB4C000C1BEB7 /* if.swift */,
+				CC4F270527BEB54C00C1BEB7 /* enum.swift */,
+				CC4F270727BEB56900C1BEB7 /* for.swift */,
+				CC4F270927BEB58300C1BEB7 /* unwrap.swift */,
+				CC4F270D27BEB5BF00C1BEB7 /* main.swift */,
 			);
 			path = swiftgrammar1;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 				TargetAttributes = {
 					CC4F26FA27BEB4C000C1BEB7 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -120,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4F26FF27BEB4C000C1BEB7 /* main.swift in Sources */,
+				CC4F270E27BEB5BF00C1BEB7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +254,15 @@
 		CC4F270327BEB4C000C1BEB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,7 +270,13 @@
 		CC4F270427BEB4C000C1BEB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
