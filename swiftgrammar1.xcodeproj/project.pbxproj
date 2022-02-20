@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC3D620C27C28E80000BA149 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D620B27C28E80000BA149 /* main.swift */; };
+		CC3D621027C2A6CF000BA149 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D620F27C2A6CF000BA149 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,9 @@
 
 /* Begin PBXFileReference section */
 		CC1D5DED27C218B100832834 /* memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory.swift; sourceTree = "<group>"; };
-		CC3D620B27C28E80000BA149 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CC3D620B27C28E80000BA149 /* Inheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
+		CC3D620D27C2A2CC000BA149 /* dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
+		CC3D620F27C2A6CF000BA149 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CC4F26FB27BEB4C000C1BEB7 /* swiftgrammar1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftgrammar1; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4F26FE27BEB4C000C1BEB7 /* if.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = if.swift; sourceTree = "<group>"; };
 		CC4F270527BEB54C00C1BEB7 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
@@ -79,7 +81,9 @@
 				CC4F271627BEC0D300C1BEB7 /* closure_1.swift */,
 				CC4F271827BEC32900C1BEB7 /* closure_2.swift */,
 				CC1D5DED27C218B100832834 /* memory.swift */,
-				CC3D620B27C28E80000BA149 /* main.swift */,
+				CC3D620B27C28E80000BA149 /* Inheritance.swift */,
+				CC3D620D27C2A2CC000BA149 /* dictionary.swift */,
+				CC3D620F27C2A6CF000BA149 /* main.swift */,
 			);
 			path = swiftgrammar1;
 			sourceTree = "<group>";
@@ -143,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3D620C27C28E80000BA149 /* main.swift in Sources */,
+				CC3D621027C2A6CF000BA149 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
