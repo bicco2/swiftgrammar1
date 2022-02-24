@@ -1,4 +1,5 @@
 import Foundation
+//---------------------struct---------------------
 
 struct YoutuberStruct {
     var name : String
@@ -16,7 +17,7 @@ print("devJin.name : \(devJin.name)")
 //struct : 복사해서 사용하는 개념. 참조하는 값이 바뀌어도 기존 값에는 영향이 없음!
 //class : 공유해서 사용하는 개념. 참조하는 값이 바뀌면 기존 값도 바뀜!
 
-
+//---------------------class---------------------
 class Youtuber {
     var name : String
     var subCnt : Int
@@ -35,3 +36,47 @@ JinClone.name = "hoho"
 
 print("class  - jinclone.name : \(JinClone.name)")
 print("class  - Jin.name : \(Jin.name)")
+
+
+
+
+
+
+
+
+
+//---------------------class instance ---------------------
+
+
+
+class PersonA{
+    var name: String! // !는 무조건 있어야하는 것 따라서 이름이 인스턴스 생성할 떄 없으면 오류 뜸 즉, 생성자에 무조건 있어야함
+    var age: Int
+    var nickName: String? //이건 뭐냐 personA를 사용하지만 닉네임이 없는 경우도 있을 수 있다는 것을 알려줌
+    
+//    init?(name: String, age: Int, nickName: String){ // init?는 안에 if를 넣어서 조건에 안맞으면 생성 x = nil
+//        self.name = name
+//        self.age = age
+//        self.nickName = nickName
+//    } //이게 클래스 초기값 만들어주는 구문인데 ---11111
+//
+    //== 위에랑 같은 코드임 표현방식이 다름
+    convenience init(name: String, age: Int, nickName: String){
+        self.init(name: name, age: age)
+        self.nickName = nickName
+    }
+    
+    
+    
+    
+    init(name: String, age: Int){
+        self.name = name
+        self.age = age
+    }
+
+}
+
+let meme: PersonA = PersonA(name: "bicco", age: 23, nickName: "haha")// 이렇게 인스턴스 생성과 동시에 초기화 해주기위함임-11111
+
+
+let meme22 = PersonA(name: "bicco", age: 23)
