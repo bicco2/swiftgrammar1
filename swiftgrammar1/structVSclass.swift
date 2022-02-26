@@ -1,9 +1,14 @@
 import Foundation
 //---------------------struct---------------------
 
-struct YoutuberStruct {
+struct YoutuberStruct { //생성자가 자동 생성 된다.
     var name : String
     var subCnt : Int
+    
+    mutating func changeName(newName : String){
+        self.name = newName //이거 안된다. struct에서는 왜??
+        //struct는 값 자체여서 안됨 ? class는 참조값이라 바꿀 수 있음 mutating 하면 가능
+    }
 }
 
 var devJin = YoutuberStruct(name:"bicco", subCnt : 99999)
@@ -14,8 +19,8 @@ print("devJinClone.name : \(devJinClone.name)")
 print("devJin.name : \(devJin.name)")
 
 //차이
-//struct : 복사해서 사용하는 개념. 참조하는 값이 바뀌어도 기존 값에는 영향이 없음!
-//class : 공유해서 사용하는 개념. 참조하는 값이 바뀌면 기존 값도 바뀜!
+//struct : 복사해서 사용하는 개념. 참조하는 값이 바뀌어도 기존 값에는 영향이 없음! 연결관계가 강함
+//class : 공유해서 사용하는 개념. 참조하는 값이 바뀌면 기존 값도 바뀜! 연결관계가 약함
 
 //---------------------class---------------------
 class Youtuber {
@@ -25,6 +30,10 @@ class Youtuber {
     init(name: String, subCnt : Int){ //init 즉 생성자 메소드로 값을 메모리에 넘겨줘야한다 .
         self.name = name
         self.subCnt = subCnt
+    }
+    func changeName(newName : String){
+        self.name = newName //class에서는 값 변경 그냥 가능함
+     
     }
 }
 
