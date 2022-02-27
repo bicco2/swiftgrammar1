@@ -31,3 +31,17 @@ func printName(_ name: String){
 var mmm : String? = "dmddo"
 
 printName(mmm!)
+
+//------------------------------------------------------
+//optional : ?? >> default 값 설정하고 싶을 때 하는 콛 ㅡ
+let s:String?
+
+if s != nil{
+    s = "not nil "
+} else{
+    s = " "
+}
+
+//==
+
+s = "not nil" ?? " "
