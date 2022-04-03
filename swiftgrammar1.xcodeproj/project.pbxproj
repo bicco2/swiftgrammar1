@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCE471E827CA85B700134C5F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE471E727CA85B700134C5F /* main.swift */; };
+		CC3806E027F9D56C001F6C20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3806DF27F9D56C001F6C20 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		CC11D90827C7815200248619 /* protocol_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol_1.swift; sourceTree = "<group>"; };
 		CC1D5DED27C218B100832834 /* memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory.swift; sourceTree = "<group>"; };
+		CC3806DC27F9D065001F6C20 /* sortFun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortFun.swift; sourceTree = "<group>"; };
+		CC3806DF27F9D56C001F6C20 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CC3D620B27C28E80000BA149 /* Inheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
 		CC3D620D27C2A2CC000BA149 /* dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
 		CC3D620F27C2A6CF000BA149 /* finalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalClass.swift; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		CC4F271627BEC0D300C1BEB7 /* closure_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closure_1.swift; sourceTree = "<group>"; };
 		CC4F271827BEC32900C1BEB7 /* closure_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closure_2.swift; sourceTree = "<group>"; };
 		CCE471E527CA769600134C5F /* protocolAssoci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolAssoci.swift; sourceTree = "<group>"; };
-		CCE471E727CA85B700134C5F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CCE471E727CA85B700134C5F /* closurePrac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closurePrac.swift; sourceTree = "<group>"; };
 		CCE898A027C640AF005D50AC /* optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +97,9 @@
 				CCE898A027C640AF005D50AC /* optional.swift */,
 				CC11D90827C7815200248619 /* protocol_1.swift */,
 				CCE471E527CA769600134C5F /* protocolAssoci.swift */,
-				CCE471E727CA85B700134C5F /* main.swift */,
+				CCE471E727CA85B700134C5F /* closurePrac.swift */,
+				CC3806DC27F9D065001F6C20 /* sortFun.swift */,
+				CC3806DF27F9D56C001F6C20 /* main.swift */,
 			);
 			path = swiftgrammar1;
 			sourceTree = "<group>";
@@ -159,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE471E827CA85B700134C5F /* main.swift in Sources */,
+				CC3806E027F9D56C001F6C20 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

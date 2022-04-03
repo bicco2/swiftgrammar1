@@ -1,31 +1,27 @@
+//private(set) 외부에서 변경하지 못하고 블럭 안에서만 변경할 수 있도록 하고 싶을 때 사용하는 것
 import Foundation
 
-func getName(_ name :String)-> String{
-    return "내 이름은 \(name)"
-}
+struct MyPet{
 
-var getNameClosure : (String) -> String
-
-func sayHello( getName: (String)-> String, name: String) -> String{
-    return getName(name)
-}
-
-let resultOne = sayHello(getName: getName(_:), name: "호롤ㄹ롤루")
-
-let numbers = [3, 7, 4, -2, 9, -6, 10, 1]
-
-
-
-
-//클로저
-
-let stringNumbers : [String] = numbers.map{(aNumber : Int) -> String in
-    return "\(aNumber)입니다."
-}
-
-let evenNumbers: [Int] = numbers.filter{ aNumber in
-    return aNumber % 2 == 0
+    var title :String = "타이틀 없음"
+    
+    private (set) var name :String = "이름없음"
+    
+    //구조체와 열거형 내부의 데이터를 수정할때 mutating을 꼭 선언해줘야함
+    mutating func setName(to newName: String){
+        self.name = newName
+    }
     
 }
 
-print(stringNumbers)
+
+
+
+var myPet = MyPet()
+
+
+myPet.title = "타이틀 있지롱"
+//이름은 그냥 myPet.name = ""로 못바꿈 왜 ? private(set)형식으로 가둬 놨기 떄문에
+myPet.setName(to: "호호")
+
+print(myPet.name,myPet.title)
