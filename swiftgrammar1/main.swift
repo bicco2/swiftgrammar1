@@ -14,6 +14,11 @@ let resultOne = sayHello(getName: getName(_:), name: "호롤ㄹ롤루")
 
 let numbers = [3, 7, 4, -2, 9, -6, 10, 1]
 
+
+
+
+//클로저
+
 let stringNumbers : [String] = numbers.map{(aNumber : Int) -> String in
     return "\(aNumber)입니다."
 }
